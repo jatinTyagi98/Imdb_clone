@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar{
+    width: 100vw;
+    display: flex;
+    background-color: blueviolet;
+    justify-content: space-around;
+    align-items: center;
+}
+.banner-card{
+    height: 70vh;
+    position: relative;
+    width: 100vw;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+.banner-img{
+    height: 70vh;
+    width: 100vw;
+    background-color: white;
+}
+.banner-title{
+    position: absolute;
+    top: 60%;
+    left: 3%;
+    color: white;
+}
+.banner-text{
+    position: absolute;
+    top: 70%;
+    left: 3%;
+    color: white;
+    height: 4.5rem;
+    overflow: hidden;
+    margin-right: 5vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+.movies-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.movies-card{
+    width: 20vw;
+    margin: 1rem;
+    color: white;
+    position: relative;
+}
+.movies-img{
+    height: 40vh;
+    width: 20vw;
+
+}
+.movies-title{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.movies-btn{
+    position: absolute;
+    bottom: 2rem;
+}
+.btn-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:400px) {
+    .banner-card{
+        height: 30vh;
+    }
+    .banner-img{
+        height: 30vh;
+    }
+
+    .movies-card{
+        width: 40vw;
+        margin: 0.1rem;
+    }
+    .movies-img{
+        width: 40vw;
+
+    }
+    .movies-btn{
+        width: 80%;
+    }
 }
